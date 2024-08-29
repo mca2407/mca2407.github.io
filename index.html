@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ESPIRE</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="images/img.png" style="height: 1000px;" alt="">
+                    <div class="signup-img-content">
+                        <!-- <h2>Register now </h2>
+                        <p>while seats are available !</p> -->
+                    </div>
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form" name="submit-to-google-sheet">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="select-list">
+                                    <label for="meal_preference">CANDIDATE ID</label>
+                                    <input type="text" name="uniqueid" id="id" placeholder="Enter the candidate id "/>
+                                </div>
+                                <div class="label-flex">
+                                    <label for="meal_preference">DESIGN AND AESTHETICS</label>
+                                    <!-- <a href="#" class="form-link">Lunch detail</a> -->
+                                </div>
+                                <div class="label-flex">
+                                    <label for="meal_preference">Overall attractiveness,consistency, and branding</label>
+                                </div>
+                                <div class="form-input">
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <label for="Visual appeal" class="required">Visual appeal</label>
+                                            <input type="number" name="Visual appeal" id="Visual appeal"  class="formbold-input-flex" />
+                                        </div>
+                                        <div>
+                                            <label for="consistency" class="required">Consistency</label>
+                                            <input type="number" name="consistency" id="consistency"  class="formbold-input-flex"/>
+                                        </div>
+                                    </div>
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <label for="branding" class="required">Branding</label>
+                                            <input type="number" name="branding" id="branding"  class="formbold-input-flex" />
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="label-flex">
+                                    <label for="meal_preference">USABILITY AND USER EXPERIENCE</label>
+                                    <!-- <a href="#" class="form-link">Lunch detail</a> -->
+                                </div>
+                                <div class="label-flex">
+                                    <label for="meal_preference">Navigation ease, accessibility,and responsiveness</label>
+                                </div>
+                                <div class="form-input">
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <label for="navigation" class="required">Navigation</label>
+                                            <input type="number" name="navigation" id="navigation"  class="formbold-input-flex" />
+                                        </div>
+                                        <div>
+                                            <label for="responsivenes" class="required">Responsivenes</label>
+                                            <input type="number" name="responsivenes" id="responsivenes"  class="formbold-input-flex"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <br><br>
+                                <div class="label-flex">
+                                    <label for="meal_preference">CONTENT AND RELEVANCE</label>
+                                    <!-- <a href="#" class="form-link">Lunch detail</a> -->
+                                </div>
+                                <div class="label-flex">
+                                    <label for="meal_preference">Content quality, topic adherence, and organization</label>
+                                </div>
+                                <div class="form-input">
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <label for="quality" class="required">Content Quality</label>
+                                            <input type="number" name="quality" id="quality"  class="formbold-input-flex" />
+                                        </div>
+                                        <div>
+                                            <label for="adherence" class="required">Topic Adherence</label>
+                                            <input type="number" name="adherence" id="adherence"  class="formbold-input-flex"/>
+                                        </div>
+                                    </div>
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <label for="organization" class="required">Organization</label>
+                                            <input type="number" name="organization" id="organization"  class="formbold-input-flex" />
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="label-flex">
+                                    <label for="meal_preference">ORGINALITY AND CREATIVITY </label>
+                                    <!-- <a href="#" class="form-link">Lunch detail</a> -->
+                                </div>
+                                <div class="label-flex">
+                                    <label for="meal_preference">Innovation and originality in design</label>
+                                </div>
+                                <div class="form-input">
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <label for="original" class="required">Orginal Work</label>
+                                            <input type="number" name="original" id="original"  class="formbold-input-flex" />
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="label-flex">
+                                    <label for="meal_preference">ADDITIONAL CONSIDERATIONS</label>
+                                    <!-- <a href="#" class="form-link">Lunch detail</a> -->
+                                </div>
+                                <div class="label-flex">
+                                    <label for="meal_preference">Presentation effectiveness and rule compliance</label>
+                                </div>
+                                <div class="form-input">
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <label for="presentation" class="required">Presentation</label>
+                                            <input type="number" name="presentation" id="presentation"  class="formbold-input-flex" />
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/main.js"></script>
+   <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzewN2GGqacQNv5yd-WdITj9KtH_wIgYChrwQl1VeF-QuV9uc39lh0H7BIVK0STPKoBAg/exec'; // Replace 'Your URL will be here' with the URL of your Google Apps Script
+    const form = document.forms['submit-to-google-sheet'];
+    form.addEventListener('submit',async e => {
+      e.preventDefault();
+      try {
+        await fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => 
+        {
+          console.log('Success!', response);
+          window.location.reload();
+        })
+        .catch(error => console.error('Error!', error.message));
+      } catch (error) {
+        console.error('Error!', error.message);
+      } 
+    });
+        
+   </script>
+</body>
+</html>
+<style>
+    .formbold-form-input {
+      text-align: center;
+      /* width: 100%; */
+      /* padding: 13px 22px; */
+      border-radius: 5px;
+      border: 1px solid #dde3ec;
+      background: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      color: #536387;
+      outline: none;
+      resize: none;
+    }
+    .formbold-input-flex {
+      display: flex;
+      gap: 0px;
+      margin-bottom: 15px;
+    }
+</style>
